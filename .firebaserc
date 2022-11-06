@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "app03-jswang": {
+      "hosting": {
+        "app03": [
+          "app03-jswang"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "app03-jswang"
+  }
+}
