@@ -1,0 +1,38 @@
+{{info}}
+<h1>Welcome! {{displayName}}</h1>
+<button class = "btn btn-secondary" (click) = "signout()" >Sing Out</button>
+<h1>Functions</h1>
+<h2>Update User Name</h2>
+<div class = "row">
+    <div class = "col-4">
+        <form>
+            <label class = "form-label">New User Name</label>
+            <input class="form-control" type = "text" name="newDisplayName" [(ngModel)] = "newDisplayName">
+            <button (click) = "updateDisplayName()" class = "btn btn-primary">Update</button>
+        </form>
+    </div> 
+</div>
+<h2>Reset Password</h2>
+<div class = "row">
+    <div class = "col-4">
+        <form>
+            <label class = "form-label">Old Password</label>
+            <input class="form-control" type = "password" name="oldPassword" [(ngModel)] = "oldPassword" (input) = "check(); ">
+            <label class = "form-label">New Password</label>
+            <input class="form-control" type = "password" name="newPassword" [(ngModel)] = "newPassword" (input) = "check(); ">
+            <label class = "form-label">New Password confirm</label>
+            <input class="form-control" type = "password" name="newPassword2" [(ngModel)] = "newPassword2" (input) = "check(); ">
+            <button (click) = "updatePassword()" class = "btn btn-primary" [disabled] = "!valid">Update</button>
+        </form>
+    </div> 
+    <div class = "col-4" [innerText]="validation"></div>
+</div>
+<h2>Dashboard</h2>
+<h3>User Statistic</h3>
+<h4>Total number of users who have signed up: {{userSignup}}</h4>
+<h4>Total number of users with active sessions today: {{userToday}}</h4>
+<h4>Average number of active session users in the last 7 days rolling: {{userWeek}}</h4>
+<h3>User Database Dashboard</h3>
+<h4>Timestamp of user sign up: {{signup}}</h4>
+<h4>Number of times logged in: {{logNumber}}</h4>
+<h4>Timestamp of the last user session: {{lastSession}}</h4>
