@@ -22,6 +22,7 @@ import { SigninComponent } from './signin/signin.component';
 import { FirebaseService } from './services/firebase.service';
 import { FormsModule } from '@angular/forms';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SwaggerUiComponent } from './swagger-ui/swagger-ui.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     LoginComponent,
     SignupComponent,
     SigninComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SwaggerUiComponent
   ],
   imports: [
     BrowserModule,
