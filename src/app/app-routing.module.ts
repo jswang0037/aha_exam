@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { SwaggerUiComponent } from './swagger-ui/swagger-ui.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'signin', component: SigninComponent }, 
   { path: 'signup', component: SignupComponent }, 
   { path: 'login', component: LoginComponent }, 
-  { path: 'welcome', component: WelcomeComponent}
+  { path: 'welcome', component: WelcomeComponent}, 
+  { path: 'swagger', component: SwaggerUiComponent}
 ];
 
 

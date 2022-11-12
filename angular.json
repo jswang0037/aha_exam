@@ -28,7 +28,9 @@
             ],
             "styles": [
               "src/styles.css", 
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",               
+              "node_modules/swagger-ui/dist/swagger-ui.css"
+              
             ],
             "scripts": []
           },
@@ -37,13 +39,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "50mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "50mb"
                 }
               ],
               "fileReplacements": [
@@ -95,12 +97,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css", 
-              "node_modules/swagger-ui-dist/swagger-ui.css"
+              "src/styles.css"
             ],
             "scripts": [
-              "node_modules/swagger-ui-dist/swagger-ui-bundle.js",
-              "node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js"
             ]
           }
         },
